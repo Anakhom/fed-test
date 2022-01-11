@@ -7,44 +7,56 @@
   font-family: "Roboto", sans-serif;
   color: white;
 }
-#q4Wrapper h1, #q4Wrapper h3 {
+
+.layout_title, .reports_title {
   margin: 0;
 }
-#q4Wrapper h1 {
+
+.layout_title {
   font-size: 48px;
 }
-#q4Wrapper h3 {
+
+.reports_title, .reports_size_type {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-#q4Wrapper header, #q4Wrapper footer {
+
+.layout_header, .reports_docs {
   background-color: #22272B;
 }
-#q4Wrapper header {
+
+.layout_header {
   padding: 20px;
 }
-#q4Wrapper footer {
+
+.reports_docs {
   margin-top: 10px;
+  margin-bottom: 40px;
   padding: 10px;
   border-radius: 5px;
 }
-#q4Wrapper article {
+
+.reports_item {
   text-align: center;
 }
-#q4Wrapper article img {
+
+.reports_item img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
-#q4Wrapper a {
+
+.reports_title a {
   display: inline-block;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease;
 }
-#q4Wrapper a:hover {
+
+.reports_title a:hover {
   transform: scale(1.05);
 }
-#q4Wrapper a span {
+
+.reports_title a span {
   opacity: 0.5;
 }
 
@@ -60,5 +72,19 @@
 
 /* Begin styling the report items here! */
 .reports {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.reports_div {
+  margin: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reports_size_type {
+  margin: 0 0 0 5px;
+  color: grey;
 }
